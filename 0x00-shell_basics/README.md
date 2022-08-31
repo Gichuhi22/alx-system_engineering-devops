@@ -9,3 +9,6 @@ A script that changes the working directory to users home directory
 
 3-listfiles 
 A script that displays current directory contents in a long format
+
+4-listmorefiles
+A script that Display current directory contents, including hidden files (starting with .). Use the long format.
