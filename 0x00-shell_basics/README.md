@@ -12,3 +12,7 @@ A script that displays current directory contents in a long format
 
 4-listmorefiles
 A script that Display current directory contents, including hidden files (starting with .). Use the long format.
+
+5-listfilesdigitonly
+A script that Display current directory contents in:
+Long format,with user and group IDs displayed numerically and hidden files 
