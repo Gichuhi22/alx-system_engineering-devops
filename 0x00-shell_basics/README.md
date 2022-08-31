@@ -15,4 +15,7 @@ A script that Display current directory contents, including hidden files (starti
 
 5-listfilesdigitonly
 A script that Display current directory contents in:
-Long format,with user and group IDs displayed numerically and hidden files 
+Long format,with user and group IDs displayed numerically and hidden files
+
+6-firstdirectory
+a script that creates a directory named my_first_directory in the /tmp/ directory. 
