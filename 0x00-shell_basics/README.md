@@ -21,4 +21,8 @@ Long format,with user and group IDs displayed numerically and hidden files
 a script that creates a directory named my_first_directory in the /tmp/ directory.
 
 7-movethatfile
-A script to Move the file betty from /tmp/ to /tmp/my_first_directory. 
+A script to Move the file betty from /tmp/ to /tmp/my_first_directory.
+
+8-firstdelete
+A script to Delete the file betty in /tmp/my_first_directory
+ 
