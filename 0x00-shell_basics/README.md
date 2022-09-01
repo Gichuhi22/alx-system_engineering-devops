@@ -31,4 +31,6 @@ A script that deletes the directory /tmp/my_first_directory
 
 10-back
 A script that changes the working directory to the previous one
- 
+
+11-lists
+A scriptthat list different directories 
