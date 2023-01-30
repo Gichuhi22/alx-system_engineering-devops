@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#set the field separator (IFS) to a colon
+IFS=:
+
+# Open the /etc/passwd file for reading
+while read -r username userid password rest; do
+  # Extract the group ID, home directory, and command/shell
+  groupid=$(id -g $username)
+  homedir=$(echo $rest | cut -d: -f6)
+  shell=$(echo $rest | cut -d: -f7)
+
+  # Display the extracted information
+  echo "The user $username is part of the $groupid gang, lives in $homedir and rides $shell. $userid's place is protected by the passcode $password, more info about the user here: $username"
+done < /etc/passwd
+
