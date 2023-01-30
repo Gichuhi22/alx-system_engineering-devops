@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# A script that prints Best School 10 times
+# The 9th iteration displays Best School then Hi on new line
+# While loop is used
+
+i=0
+while [ "$i" -lt 10 ];
+do
+	if [ "$i" -eq 8 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
