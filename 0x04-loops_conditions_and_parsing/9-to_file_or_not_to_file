@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # a Bash script that gives you information about the school file
 
-if [[ ! -e /home/vagrant/alx-system_engineering-devops/0x04-loops_conditions_and_parsing/school ]];
+if [[ ! -e school ]];
 then
 	echo "school file does not exist"
 else
