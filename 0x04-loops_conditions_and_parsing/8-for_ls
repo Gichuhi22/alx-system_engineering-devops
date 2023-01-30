@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # displays: The content of the current directory
-for x in *;
+files=$(ls -I ".*")
+
+for i in $files;
 do
-	echo "$x" | cut -d'-' -f2
+	name=${i#*-}
+	echo "$name"
 done
