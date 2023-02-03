@@ -2,11 +2,4 @@
 
 #bash script that displays all active IPV4 IPson machine its executed on
 # Get all active IPv4 IP addresses
-ips=$(ip addr | grep 'inet' | grep -v 'inet6' | awk '{print $2}' | cut -d/ -f1)
-
-# Display the IP addresses
-#echo "Active IPv4 IP addresses:"
-for ip in $ips; do
-    echo $ip
-done
-
+ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d" " -f1
