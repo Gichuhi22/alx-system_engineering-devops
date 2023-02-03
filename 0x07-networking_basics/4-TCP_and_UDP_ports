@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# A bash script that displays listening ports
+
 ss -xtulwnp
