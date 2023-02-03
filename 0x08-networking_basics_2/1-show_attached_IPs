@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
-#bash script that displays all active IPV4 IPson machine its executed on
+#bash script that displays all active IPV4 IPs on machine its executed on
 # Get all active IPv4 IP addresses
-ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d" " -f1
+
+ips=$(ifconfig | grep 'inet' | grep -v 'inet6' | cut -d: -f2 | awk '{print $1}')
+
+# Check if the list is empty
+if [ -z "$ips" ]; then
+	  echo "No active IPv4 IPs found."
+  else
+	    echo "Active IPv4 IPs:"
+		  echo "$ips"
+fi
+
