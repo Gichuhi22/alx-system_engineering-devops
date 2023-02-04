@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # a bash script that displays its own PID
-ps -aux |grep 0-what-is-my-pid | awk '{print $2}'
+pgrep -f 0-what-is-my-pid
+# or:
+# ps -aux |grep 0-what-is-my-pid | awk '{print $2}'
